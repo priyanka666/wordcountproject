@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>there are {{ wordcount }} words in sentecne</h1>
+    <p>the sentence given is {{ fulltext }}</p>
+    <a href ="{% url 'home' %}">start again</a>
+    <!--{{ worddictionary }}-->
+
+    {% for word,countword in worddictionary %}
+    <h2>{{ word }}</h2>
+    <h3>{{ countword }}</h3>
+    <br/>
+    {% endfor %}
+
+</head>
+<body>
+
+</body>
+</html>

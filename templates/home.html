@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <p><h1>This is my word count app {{ name }}</h1></p>
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="5" name="fulltext"></textarea>
+    </br>
+        <input type="submit" value="Count"><a href = "{% url 'about' %}">About page</a>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
